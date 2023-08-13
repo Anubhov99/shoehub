@@ -4,6 +4,7 @@ package com.company.shoehub.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +15,7 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@EnableMongoRepositories
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -3,10 +3,12 @@ package com.company.shoehub.service;
 import com.company.shoehub.entity.Product;
 import com.company.shoehub.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
+@EnableMongoRepositories
 public class ProductServiceImpl implements ProductService {
     @Autowired
     ProductRepository productRepository;

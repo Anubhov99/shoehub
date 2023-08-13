@@ -3,6 +3,7 @@ package com.company.shoehub.controller;
 import com.company.shoehub.entity.Product;
 import com.company.shoehub.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @RestController
+@EnableMongoRepositories
 @RequestMapping("/products")
 public class ProductController {
     private final ProductServiceImpl productService;
