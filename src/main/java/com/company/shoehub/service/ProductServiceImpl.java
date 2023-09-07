@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product updateProduct(Product product, Long id) {
+    public Product updateProduct(Product product, String id) {
         Product product1 = new Product();
         product1.setId(id);
         product1.setName(product.getName());
@@ -36,7 +36,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void deleteProductById(Long id) {
+    public void deleteProductById(String id) {
         productRepository.deleteById(id);
     }
 }

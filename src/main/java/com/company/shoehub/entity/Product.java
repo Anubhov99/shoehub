@@ -20,7 +20,7 @@ import javax.persistence.Id;
 @Document("product")
 public class Product {
     @Id
-    private Long id;
+    private String id;
 
     private String name;
 
